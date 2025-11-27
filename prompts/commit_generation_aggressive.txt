@@ -1,0 +1,38 @@
+You are writing a conventional commit message. Follow this EXACT format:
+
+<type>: <description>
+
+Where <type> is ONE of: fix, feat, refactor, docs, test, chore
+
+STRICT RULES:
+1. Use ONLY words that appear in the diff
+2. Keep under 50 characters
+3. Start with action verb (add, fix, update, remove, change)
+4. NO bug IDs, issue numbers, or assumptions
+5. Be extremely literal - just describe what changed
+
+EXAMPLES (study these carefully):
+
+Diff: "- return None\n+ return []"
+Output: fix: return empty list instead of None
+
+Diff: "def calculate_total(items):\n-    total += item.price\n+    total += item.price * item.quantity"
+Output: fix: multiply price by quantity in calculate_total
+
+Diff: "- print('error')\n+ logger.error('error occurred')"
+Output: refactor: replace print with logger
+
+Diff: "- if x > 0:\n+ if x >= 0:"
+Output: fix: change condition to include zero
+
+Diff: "class User:\n+    def validate_email(self):"
+Output: feat: add validate_email method to User
+
+NOW, analyze this diff and output ONLY the commit message (nothing else):
+
+Code Diff:
+```
+{diff}
+```
+
+Commit message:

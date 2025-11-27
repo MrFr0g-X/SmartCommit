@@ -1,0 +1,1233 @@
+INFO:api.model_service:ModelService initialized with gemini-2.0-flash-exp
+INFO:api.evaluate_simple:Initializing simplified evaluator...
+INFO:api.evaluate_simple:Evaluator initialized successfully
+INFO:__main__:Initialized experiment: 20251127_000842
+INFO:__main__:Loading dataset from D:\Zewail_DC\YEAR_4\SW403\project\data\commitbench_samples.csv
+INFO:__main__:Processing 20 samples
+Processing:   0%|          | 0/20 [00:00<?, ?it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 0: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:   5%|5         | 1/20 [00:00<00:18,  1.03it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 1: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  10%|#         | 2/20 [00:01<00:12,  1.38it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 2: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  15%|#5        | 3/20 [00:02<00:12,  1.31it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 3: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  20%|##        | 4/20 [00:03<00:12,  1.30it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 4: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  25%|##5       | 5/20 [00:03<00:11,  1.26it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 5: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  30%|###       | 6/20 [00:04<00:11,  1.24it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 6: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  35%|###5      | 7/20 [00:05<00:10,  1.26it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 7: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  40%|####      | 8/20 [00:06<00:09,  1.27it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 8: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  45%|####5     | 9/20 [00:06<00:07,  1.39it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 9: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  50%|#####     | 10/20 [00:07<00:06,  1.46it/s]ERROR:api.evaluate_simple:Error computing BLEU: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing ROUGE: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:api.evaluate_simple:Error computing semantic similarity: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+ERROR:__main__:Error processing sample 10: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\hothi/nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\share\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Local\\Programs\\Python\\Python310\\lib\\nltk_data'
+    - 'C:\\Users\\hothi\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+Processing:  55%|#####5    | 11/20 [00:08<00:06,  1.35it/s]ERROR:api.model_service:Error generating commit message: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 9
+}
+]
+ERROR:__main__:Generation failed for sample 11
+ERROR:api.model_service:Error generating commit message: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 8
+}
+]
+ERROR:__main__:Generation failed for sample 12
+Processing:  65%|######5   | 13/20 [00:08<00:03,  2.28it/s]ERROR:api.model_service:Error generating commit message: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 8
+}
+]
+ERROR:__main__:Generation failed for sample 13
+ERROR:api.model_service:Error generating commit message: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 8
+}
+]
+ERROR:__main__:Generation failed for sample 14
+Processing:  75%|#######5  | 15/20 [00:08<00:01,  3.33it/s]ERROR:api.model_service:Error generating commit message: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 8
+}
+]
+ERROR:__main__:Generation failed for sample 15
+Processing:  80%|########  | 16/20 [00:08<00:01,  3.91it/s]ERROR:api.model_service:Error generating commit message: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 8
+}
+]
+ERROR:__main__:Generation failed for sample 16
+ERROR:api.model_service:Error generating commit message: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 8
+}
+]
+ERROR:__main__:Generation failed for sample 17
+Processing:  90%|######### | 18/20 [00:09<00:00,  5.18it/s]ERROR:api.model_service:Error generating commit message: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 8
+}
+]
+ERROR:__main__:Generation failed for sample 18
+ERROR:api.model_service:Error generating commit message: 429 You exceeded your current quota. Please migrate to Gemini 2.0 Flash Preview (Image Generation) (models/gemini-2.0-flash-preview-image-generation) for higher quota limits. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_requests_per_model"
+  quota_id: "GenerateRequestsPerMinutePerProjectPerModel"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.0-flash-exp"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 10
+}
+, retry_delay {
+  seconds: 8
+}
+]
+ERROR:__main__:Generation failed for sample 19
+Processing: 100%|##########| 20/20 [00:09<00:00,  6.32it/s]Processing: 100%|##########| 20/20 [00:09<00:00,  2.17it/s]
+INFO:__main__:Completed with 20 errors
+INFO:__main__:Saved results to D:\Zewail_DC\YEAR_4\SW403\project\results\experiment_20251127_000842.csv
+Traceback (most recent call last):
+  File "D:\Zewail_DC\YEAR_4\SW403\project\experiments\run_experiments.py", line 218, in <module>
+    main()
+  File "D:\Zewail_DC\YEAR_4\SW403\project\experiments\run_experiments.py", line 212, in main
+    results = runner.run_experiment(dataset_path, num_samples)
+  File "D:\Zewail_DC\YEAR_4\SW403\project\experiments\run_experiments.py", line 131, in run_experiment
+    self._save_results(results_df)
+  File "D:\Zewail_DC\YEAR_4\SW403\project\experiments\run_experiments.py", line 154, in _save_results
+    'mean_bleu': float(results_df['bleu'].mean()),
+  File "C:\Users\hothi\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\frame.py", line 4107, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "C:\Users\hothi\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\indexes\range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'bleu'

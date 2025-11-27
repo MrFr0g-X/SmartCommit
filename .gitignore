@@ -1,0 +1,183 @@
+# ============================================================================
+# SmartCommit Phase 2 - SUBMISSION READY Configuration
+# ONLY ESSENTIAL FILES FOR GRADING WILL BE TRACKED
+# ============================================================================
+
+# ============================================================================
+# 1. API KEYS & SECRETS (CRITICAL - NEVER UPLOAD!)
+# ============================================================================
+.env
+*.env
+.env.local
+.env.*.local
+*.key
+secrets.yaml
+
+# ============================================================================
+# 2. PYTHON BUILD ARTIFACTS (IGNORE)
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============================================================================
+# 3. VIRTUAL ENVIRONMENTS (IGNORE)
+# ============================================================================
+venv/
+ENV/
+env/
+.venv
+
+# ============================================================================
+# 4. IDE & EDITOR FILES (IGNORE)
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================================================================
+# 5. LOGS & POWERSHELL SCRIPTS (IGNORE)
+# ============================================================================
+logs/
+*.log
+*.tmp
+*.temp
+
+# PowerShell scripts (helper/setup/verification scripts)
+*.ps1
+
+# ============================================================================
+# 6. EXPERIMENTAL RESULTS - SELECTIVE KEEP
+# ============================================================================
+# IGNORE intermediate experiments (not needed)
+results/experiment_20251127_000842.csv
+results/experiment_20251127_000938.csv
+results/experiment_20251127_004822.csv
+
+# KEEP ONLY these essential results:
+# !results/experiment_20251127_001902.csv  (BASELINE - required)
+# !results/experiment_20251127_005526.csv  (IMPROVED - required)
+# !results/summary_20251127_001902.json    (BASELINE stats)
+# !results/summary_20251127_005526.json    (IMPROVED stats)
+# !results/hallucination_analysis.csv      (ERROR ANALYSIS - required)
+# !results/plots/*.png                      (VISUALIZATIONS - required)
+
+# ============================================================================
+# 7. DOCUMENTATION - KEEP MINIMAL, IGNORE DRAFTS
+# ============================================================================
+# IGNORE all Phase 1 materials (already submitted)
+SmartCommit_Phase1_Proposal.tex
+SmartCommit_Phase1_Proposal.pdf
+
+# IGNORE unnecessary helper docs
+CLAUDE.md
+IMPROVEMENT_STRATEGIES.md
+TEST_IMPROVEMENTS.md
+PHASE2_DELIVERABLES.md
+SmartCommit_Implementation_Guide.md
+iOS*.md
+FINAL_SUBMISSION_CHECKLIST.md
+docs/PHASE2_COMPLETION_GUIDE.md
+docs/compile_report.bat
+
+# IGNORE Markdown version of report (keep only LaTeX)
+docs/Phase2_Report_Template.md
+
+# IGNORE helper scripts
+run_experiment_quick.bat
+setup.py
+test_api.py
+
+# IGNORE organization/checklist files (meta-documentation)
+SUBMISSION_ORGANIZATION.md
+WHAT_WILL_BE_UPLOADED.md
+docs/COMPLETION_SUMMARY.md
+
+# IGNORE quickstart documentation
+QUICKSTART.md
+
+# IGNORE Word documents
+*.docx
+*.doc
+
+# IGNORE VS Code/Claude settings
+.claude/
+
+# IGNORE example files
+.env.example
+
+# KEEP ONLY:
+# - README.md (REQUIRED for reproducibility)
+# - config.yaml (REQUIRED - system configuration)
+# - requirements.txt (REQUIRED - dependencies)
+# - docs/Phase2_Report_IEEE.tex (DELIVERABLE - LaTeX source)
+# - docs/Phase2_Report.pdf (DELIVERABLE - compiled report)
+# - docs/figures/*.png (DELIVERABLE - diagrams)
+# - .github/copilot-instructions.md (BONUS - AI agent guide)
+
+# ============================================================================
+# 8. DATA FILES - KEEP ONLY ESSENTIAL DATASET
+# ============================================================================
+# IGNORE raw/backup data
+data/commitbench_raw.csv
+data/*.backup
+data/*.old
+
+# KEEP:
+# - data/commitbench_samples.csv (REQUIRED - 170 samples)
+# - data/prepare_dataset.py (REQUIRED - data generation script)
+
+# ============================================================================
+# 9. JUPYTER & MODEL CACHE (IGNORE)
+# ============================================================================
+.ipynb_checkpoints/
+*.ipynb
+.cache/
+transformers/
+models/
+
+# ============================================================================
+# 10. LATEX BUILD ARTIFACTS (IGNORE)
+# ============================================================================
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.out
+*.toc
+*.lof
+*.lot
+
+# ============================================================================
+# 11. PDF FILES - IGNORE ALL EXCEPT FINAL REPORT
+# ============================================================================
+*.pdf
+!docs/Phase2_Report.pdf
+
+# ============================================================================
+# 12. OS FILES (IGNORE)
+# ============================================================================
+Thumbs.db
+desktop.ini

@@ -1,0 +1,17 @@
+You are an expert software engineer writing a commit message for the following code changes.
+
+Analyze the diff carefully and generate a concise, descriptive commit message following these guidelines:
+- Use imperative mood (e.g., "Add feature" not "Added feature")
+- Keep the first line under 50 characters
+- Focus on WHAT changed and WHY, not HOW
+- Only mention changes that are actually present in the diff
+- Do NOT include information that cannot be verified from the diff
+- Do NOT make assumptions about bug IDs, issue numbers, or external context
+- Be specific about which files/functions were modified
+
+Code Diff:
+```
+{diff}
+```
+
+Generate ONLY the commit message (no explanations, no extra text):

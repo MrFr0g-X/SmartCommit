@@ -1,0 +1,22 @@
+{
+  "experiment_id": "20251127_005526",
+  "timestamp": "2025-11-27T01:17:00.384459",
+  "num_samples": 170,
+  "metrics": {
+    "mean_bleu": 0.0,
+    "mean_rougeL": 47.902,
+    "mean_semantic_similarity": 0.2951682352941176,
+    "mean_quality_score": 0.2899082352941176,
+    "hallucination_rate": 0.4235294117647059,
+    "mean_latency_ms": 638.6882352941177
+  },
+  "config": {
+    "primary": "gemini-2.0-flash-exp",
+    "fallback": "gemini-1.5-flash",
+    "temperature": 0.1,
+    "top_p": 0.95,
+    "top_k": 40,
+    "max_output_tokens": 512,
+    "candidate_count": 1
+  }
+}
