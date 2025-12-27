@@ -1,0 +1,24 @@
+[project]
+name = "ethical_ai_commit_message_generator_with_governance"
+version = "0.1.0"
+description = "ethical_ai_commit_message_generator_with_governance using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[google-genai,tools]==1.4.1",
+]
+
+[project.scripts]
+ethical_ai_commit_message_generator_with_governance = "ethical_ai_commit_message_generator_with_governance.main:run"
+run_crew = "ethical_ai_commit_message_generator_with_governance.main:run"
+train = "ethical_ai_commit_message_generator_with_governance.main:train"
+replay = "ethical_ai_commit_message_generator_with_governance.main:replay"
+test = "ethical_ai_commit_message_generator_with_governance.main:test"
+run_with_trigger = "ethical_ai_commit_message_generator_with_governance.main:run_with_trigger"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

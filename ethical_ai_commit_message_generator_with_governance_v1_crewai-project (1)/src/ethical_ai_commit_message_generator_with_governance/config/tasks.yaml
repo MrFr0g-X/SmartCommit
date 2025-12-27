@@ -1,0 +1,120 @@
+---
+generate_initial_commit_message:
+  description: |-
+    Parse the git diff from {diff} and generate an initial commit message with full governance logging.
+
+    **Generation Process:**
+    1. **Input Validation**: Verify diff is non-empty, safe (no secrets/malicious code)
+    2. **Diff Analysis**: Parse files changed, functions modified, change types
+    3. **Message Generation**: Create conventional commit format message
+    4. **Transparency Logging**: Record generation parameters (model, temperature, tokens)
+    5. **Reasoning Documentation**: Explain why this message describes the changes
+
+    **Safety Requirements:**
+    - Validate input diff for security threats
+    - Ensure output is grounded in diff content only
+    - Log all generation parameters for accountability
+
+    **Output Format**: Generate JSON with message, reasoning, metadata including timestamps, generation parameters, and safety validation results.
+  expected_output: "JSON object with governance-compliant generation:\n{\n  \"message\":
+    \"type(scope): imperative description of changes\",\n  \"reasoning\": \"Detailed
+    explanation of why this message describes the changes\",\n  \"metadata\": {\n
+    \   \"agent\": \"GeneratorAgent\",\n    \"action\": \"Generated\", \n    \"timestamp\":
+    \"ISO 8601 timestamp\",\n    \"execution_time_ms\": 0.0,\n    \"generation_parameters\":
+    {\n      \"temperature\": 0.1,\n      \"max_tokens\": 150,\n      \"model\": \"current_model\"\n
+    \   },\n    \"input_validation\": {\n      \"safe\": true,\n      \"non_empty\":
+    true,\n      \"diff_size\": \"number_of_lines\"\n    }\n  }\n}"
+  agent: generatoragent
+validate_quality_and_safety:
+  description: "Perform comprehensive quality assessment and hallucination detection
+    on the generated commit message with safety blocking.\n\n**Validation Process:**\n1.
+    **Hallucination Detection**: Check if message tokens exist in original diff\n2.
+    **Quality Metrics**: Calculate BLEU-4, ROUGE-L, semantic similarity scores  \n3.
+    **Severity Assessment**: Classify hallucination level (NONE/LOW/MEDIUM/HIGH/CRITICAL)\n4.
+    **Confidence Scoring**: Determine confidence based on quality + severity\n5. **Safety
+    Blocking**: REJECT if severity > LOW, WARN for MEDIUM/HIGH\n6. **Governance Check**:
+    Ensure transparency, explainability, accountability\n\n**Quality Formula**: 30%
+    BLEU + 30% ROUGE-L + 30% semantic + 10% no-hallucination\n\n**Decision Logic:**\n-
+    ACCEPT: quality ≥ {quality_threshold} AND severity ≤ LOW\n- REJECT: severity >
+    LOW OR critical safety issues\n- REFINE: quality < threshold but severity ≤ LOW"
+  expected_output: "JSON validation result with safety metadata:\n{\n  \"is_valid\":
+    boolean,\n  \"decision\": \"ACCEPT/REJECT/REFINE\", \n  \"reasoning\": \"Detailed
+    explanation of validation decision\",\n  \"metrics\": {\n    \"bleu_score\": 0.0-1.0,\n
+    \   \"rouge_l_score\": 0.0-1.0, \n    \"semantic_similarity\": 0.0-1.0,\n    \"quality_score\":
+    0.0-1.0\n  },\n  \"safety_metadata\": {\n    \"hallucination_detected\": boolean,\n
+    \   \"hallucination_severity\": \"NONE/LOW/MEDIUM/HIGH/CRITICAL\",\n    \"confidence_level\":
+    \"VERY_LOW/LOW/MEDIUM/HIGH\", \n    \"ungrounded_ratio\": 0.0-1.0,\n    \"validation_warnings\":
+    [\"array of warnings\"]\n  },\n  \"governance\": {\n    \"transparency_enabled\":
+    true,\n    \"explainability_provided\": true,\n    \"safety_validated\": true\n
+    \ },\n  \"execution_metadata\": {\n    \"agent\": \"ValidatorAgent\",\n    \"action\":
+    \"Validated\",\n    \"timestamp\": \"ISO 8601\",\n    \"execution_time_ms\": 0.0\n
+    \ }\n}"
+  agent: validatoragent
+  context:
+  - generate_initial_commit_message
+refine_message_with_governance:
+  description: |-
+    Conditionally refine the commit message based on validation feedback, implementing iterative improvement with governance controls.
+
+    **Refinement Logic:**
+    1. **Decision Check**: Only execute if validation decision = "REFINE"
+    2. **Feedback Analysis**: Process validator warnings and quality gaps
+    3. **Targeted Improvement**: Address specific issues (format, clarity, grounding)
+    4. **Iteration Management**: Track refinement cycles (max {max_iterations})
+    5. **Re-validation**: Ensure improvements don't introduce new issues
+    6. **Governance Compliance**: Maintain accountability and explainability
+
+    **Improvement Strategies:**
+    - Format fixes: Ensure conventional commit compliance
+    - Clarity enhancements: Improve description without adding content
+    - Safety constraints: Remove any ungrounded elements
+    - Length optimization: Keep under 72 characters
+
+    **Termination Conditions:**
+    - Quality score ≥ {quality_threshold}
+    - Max iterations reached
+    - Safety severity becomes CRITICAL (abort)
+  expected_output: "JSON refinement result with improvement tracking:\n{\n  \"refined_message\":
+    \"type(scope): improved description\",\n  \"reasoning\": \"Explanation of what
+    improvements were made and why\",\n  \"improvement_delta\": 0.0-1.0,\n  \"iterations_used\":
+    1-3,\n  \"changes_made\": [\"list of specific improvements\"],\n  \"governance\":
+    {\n    \"explainability_provided\": true,\n    \"accountability_traced\": true,\n
+    \   \"improvements_justified\": true\n  },\n  \"execution_metadata\": {\n    \"agent\":
+    \"RefinerAgent\", \n    \"action\": \"Refined\",\n    \"timestamp\": \"ISO 8601\",\n
+    \   \"execution_time_ms\": 0.0,\n    \"iteration_number\": 1-3\n  },\n  \"final_validation\":
+    {\n    \"quality_improved\": boolean,\n    \"safety_maintained\": boolean,\n    \"ready_for_approval\":
+    boolean\n  }\n}"
+  agent: refineragent
+  context:
+  - validate_quality_and_safety
+final_governance_output:
+  description: "Compile the final governance-compliant output with complete audit
+    trail, safety metadata, and quality metrics for FastAPI integration.\n\n**Output
+    Compilation:**\n1. **Agent Trail Assembly**: Collect all agent decisions, reasoning,
+    timestamps\n2. **Governance Scoring**: Calculate compliance across 4 pillars\n3.
+    **Safety Metadata**: Compile final hallucination and confidence scores\n4. **Quality
+    Metrics**: Aggregate BLEU, ROUGE, semantic similarity\n5. **Performance Tracking**:
+    Total execution time and iteration count\n6. **Compliance Verification**: Ensure
+    all governance requirements met\n\n**Governance Pillars:**\n- Safety: Hallucination
+    blocking, input/output validation\n- Transparency: Parameter logging, decision
+    visibility  \n- Explainability: Agent reasoning documentation\n- Accountability:
+    Complete audit trail with timestamps\n\n**Integration Requirements:**\n- Must
+    output JSON compatible with FastAPI Pydantic schema\n- Must include the final
+    commit message string\n- Must provide complete metadata for {diff} input"
+  expected_output: "Complete governance-compliant JSON output for FastAPI:\n{\n  \"message\":
+    \"Final approved commit message string\",\n  \"agent_trail\": [\n    {\n      \"agent\":
+    \"GeneratorAgent/ValidatorAgent/RefinerAgent\",\n      \"action\": \"Generated/Validated/Refined\",
+    \n      \"reasoning\": \"Detailed explanation of agent decisions\",\n      \"execution_time_ms\":
+    0.0,\n      \"timestamp\": \"ISO 8601 timestamp\"\n    }\n  ],\n  \"governance\":
+    {\n    \"safety_validated\": boolean,\n    \"transparency_enabled\": boolean,
+    \n    \"explainability_provided\": boolean,\n    \"accountability_traced\": boolean,\n
+    \   \"compliance_score\": 0.0-1.0\n  },\n  \"safety_metadata\": {\n    \"hallucination_detected\":
+    boolean,\n    \"hallucination_severity\": \"NONE/LOW/MEDIUM/HIGH/CRITICAL\",\n
+    \   \"confidence_level\": \"VERY_LOW/LOW/MEDIUM/HIGH\",\n    \"quality_score\":
+    0.0-1.0,\n    \"ungrounded_ratio\": 0.0-1.0,\n    \"validation_warnings\": [\"array
+    of warnings\"]\n  },\n  \"metrics\": {\n    \"bleu_score\": 0.0-1.0,\n    \"rouge_l_score\":
+    0.0-1.0,\n    \"semantic_similarity\": 0.0-1.0\n  },\n  \"total_execution_time_ms\":
+    0.0,\n  \"iterations\": 1-3\n}"
+  agent: validatoragent
+  context:
+  - refine_message_with_governance
