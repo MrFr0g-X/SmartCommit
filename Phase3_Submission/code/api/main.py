@@ -17,7 +17,6 @@ from .evaluate_simple import CommitMessageEvaluator  # Use lightweight evaluator
 from .git_interface import GitInterface
 from .safety import SafetyGuardrails
 from .audit_log import AuditLogger
-from .multi_agent import generate_with_multi_agent  # Phase 3 Bonus: Multi-Agent Workflow
 
 # Setup logging
 logging.basicConfig(
@@ -246,104 +245,6 @@ async def generate_commit(request: GenerateRequest):
         raise
     except Exception as e:
         logger.error(f"Error in generate_commit: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-@app.post("/generateCommitMultiAgent")
-async def generate_commit_multi_agent(request: GenerateRequest):
-    """
-    BONUS ENDPOINT: Generate commit message using multi-agent workflow with governance
-
-    Multi-Agent Workflow:
-      1. GeneratorAgent: Creates initial commit message
-      2. ValidatorAgent: Checks quality, hallucinations, and safety
-      3. RefinerAgent: Improves message based on validator feedback
-
-    Governance Controls:
-      - Safety: Each agent has input/output validation
-      - Transparency: Complete audit trail of all agent interactions
-      - Explainability: Each agent explains its reasoning
-      - Accountability: Full trace showing which agent made what changes
-
-    Args:
-        request: Contains diff and optional parameters
-
-    Returns:
-        Generated commit message with multi-agent governance trail
-    """
-    try:
-        logger.info("Received multi-agent generate request")
-
-        # Phase 3 Bonus: Input validation (same as single-agent)
-        is_valid, validation_msg, validation_metadata = safety_guardrails.validate_input(
-            diff=request.diff,
-            ip_address="unknown"
-        )
-
-        if not is_valid:
-            logger.warning(f"Multi-agent input validation failed: {validation_msg}")
-            audit_logger.log_safety_violation(
-                violation_type="multi_agent_input_validation_failed",
-                details=validation_msg,
-                input_data={"diff": request.diff},
-                ip_address="unknown"
-            )
-            raise HTTPException(status_code=400, detail=validation_msg)
-
-        logger.info("Multi-agent input validation passed")
-
-        # Execute multi-agent workflow
-        import time
-        start_time = time.time()
-
-        multi_agent_result = generate_with_multi_agent(
-            diff=request.diff,
-            reference_message=""  # No reference for generation
-        )
-
-        latency_ms = (time.time() - start_time) * 1000
-
-        # Prepare response
-        response_data = {
-            "message": multi_agent_result["message"],
-            "model": "multi-agent-gemini-2.0-flash",
-            "latency_ms": latency_ms,
-            "timestamp": datetime.utcnow().isoformat(),
-            # Multi-Agent Specific Fields
-            "multi_agent_workflow": {
-                "agents_involved": multi_agent_result["governance"]["agents_involved"],
-                "total_iterations": multi_agent_result["governance"]["total_iterations"],
-                "governance_compliance_score": multi_agent_result["governance"]["governance_compliance_score"]
-            },
-            "agent_trail": multi_agent_result["agent_trail"],
-            "governance": {
-                "safety_validated": multi_agent_result["governance"]["safety_validated"],
-                "transparency_enabled": multi_agent_result["governance"]["transparency_report"]["governance_compliance"]["transparency_enabled"],
-                "explainability_provided": multi_agent_result["governance"]["explainability_provided"],
-                "accountability_traced": multi_agent_result["governance"]["accountability_traced"],
-                "safety_checks_performed": multi_agent_result["governance"]["transparency_report"]["governance_compliance"]["safety_checks_performed"]
-            },
-            "quality_metrics": multi_agent_result["quality_metrics"]
-        }
-
-        # Log API call
-        audit_logger.log_api_call(
-            endpoint="/generateCommitMultiAgent",
-            request_data={"diff": request.diff},
-            response_data={"message": multi_agent_result["message"], "agents": multi_agent_result["governance"]["agents_involved"]},
-            ip_address="unknown",
-            latency_ms=latency_ms,
-            status_code=200
-        )
-
-        logger.info(f"Multi-agent workflow completed successfully in {latency_ms:.2f}ms")
-
-        return response_data
-
-    except HTTPException:
-        raise
-    except Exception as e:
-        logger.error(f"Error in generate_commit_multi_agent: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
 

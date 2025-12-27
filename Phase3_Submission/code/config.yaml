@@ -1,0 +1,53 @@
+# SmartCommit Configuration File
+# Phase 2 - Experimental Setup
+
+# Model Configuration
+model:
+  primary: "gemini-2.0-flash-exp"  # Using Gemini 2.0 Flash for faster experimentation
+  fallback: "gemini-1.5-flash"
+  temperature: 0.1  # Lower temp for more deterministic outputs and reduced hallucinations
+  top_p: 0.95
+  top_k: 40
+  max_output_tokens: 512
+  candidate_count: 1
+
+# API Configuration
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+
+# Experiment Configuration
+experiment:
+  dataset_path: "data/commitbench_samples.csv"
+  num_samples: 170  # Full dataset for Phase 2 final results
+  test_split: 0.2
+  random_seed: 42
+  batch_size: 10
+  delay_seconds: 7  # Wait 7 seconds between requests (10 RPM = 6 sec minimum, use 7 for safety)
+
+# Evaluation Metrics
+evaluation:
+  metrics:
+    - bleu
+    - rouge
+    - bertscore
+    - semantic_similarity
+  hallucination_threshold: 0.10  # 10% ungrounded tokens triggers warning (stricter)
+
+# Logging Configuration
+logging:
+  enabled: true
+  log_dir: "logs"
+  log_format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  save_prompts: true
+  save_responses: true
+
+# Prompt Templates
+prompts:
+  generation: "prompts/commit_generation_improved.txt"  # Using improved prompt with few-shot examples
+
+# Output Configuration
+output:
+  results_dir: "results"
+  save_intermediate: true

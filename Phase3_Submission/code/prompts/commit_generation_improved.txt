@@ -1,0 +1,32 @@
+You are an expert software engineer writing a commit message for the following code changes.
+
+Analyze the diff carefully and generate a concise, descriptive commit message following these guidelines:
+
+STRUCTURE:
+- Use imperative mood (e.g., "Fix bug" not "Fixed bug")
+- Keep the first line under 50 characters
+- Use conventional commit patterns (Fix, Add, Update, Remove, Refactor)
+
+CONTENT RULES:
+- ONLY mention changes visible in the diff
+- Use exact file names, function names, and variable names from the diff
+- Do NOT add bug IDs, issue numbers, or external references
+- Do NOT make assumptions about why changes were made unless obvious
+- Do NOT mention testing, documentation, or other files not in the diff
+
+EXAMPLES:
+Diff: "- return None\n+ return []"
+Message: "Return empty list instead of None"
+
+Diff: "def calculate_total(items):\n-    total += item.price\n+    total += item.price * item.quantity"
+Message: "Multiply price by quantity in calculate_total"
+
+Diff: "- print('error')\n+ logger.error('error occurred')"
+Message: "Replace print with logger in error handling"
+
+Code Diff:
+```
+{diff}
+```
+
+Generate ONLY the commit message (no explanations, no extra text):

@@ -1,0 +1,137 @@
+sample_id,diff,reference_message,generated_message,bleu,rouge1,rouge2,rougeL,semantic_similarity,hallucination_detected,hallucination_rate,quality_score,latency_ms,model,temperature
+0,"diff --git a/src/models.py b/src/models.py
+index 6992486..7708642 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -24,7 +23,11 @@ def save_record(response, item=None):
+     # Process the input
+-    ...",Fix missing validation in save_record,Update response to 1 in save_record,0.0,40.0,25.0,40.0,0.1429,False,0.0,0.2629,898,gemini-2.0-flash-exp,0.1
+1,"diff --git a/src/auth.py b/src/auth.py
+index 4244687..6641622 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -34,11 +10,7 @@ def save_record(result, data=None):
+     # Process the input
+-    result = e...",Fix division by zero in save_record,Fix: Remove unused variable assignment in save_record,0.0,50.0,20.0,50.0,0.2222,True,1.0,0.2167,535,gemini-2.0-flash-exp,0.1
+2,"diff --git a/src/api.py b/src/api.py
+index 9068041..9682290 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -45,10 +26,10 @@ def calculate_total(response, status=None):
+     # Process the input
+-    respo...",Fix undefined variable in calculate_total,Update response value in calculate_total,0.0,40.0,25.0,40.0,0.1429,True,0.5,0.1629,677,gemini-2.0-flash-exp,0.1
+3,"diff --git a/src/validators.py b/src/validators.py
+index 5881009..7931437 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -15,9 +34,9 @@ def validate_input(result, result=None):
+     # Proce...",Fix missing validation in validate_input,Fix: Assign value to result in validate_input,0.0,60.0,25.0,60.0,0.25,True,0.3333,0.255,533,gemini-2.0-flash-exp,0.1
+4,"diff --git a/src/validators.py b/src/validators.py
+index 2183268..2816545 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -50,8 +11,10 @@ def fetch_results(data, item=None):
+     # Process t...",Fix incorrect calculation in fetch_results,Fix assignment of `data` in `fetch_results`,0.0,60.0,0.0,60.0,0.2857,True,0.5,0.2657,606,gemini-2.0-flash-exp,0.1
+5,"diff --git a/src/auth.py b/src/auth.py
+index 4681843..7888851 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -33,11 +36,5 @@ def fetch_results(user, data=None):
+     # Process the input
+-    user = 0
++...",Fix division by zero in fetch_results,Refactor fetch_results to use data parameter,0.0,16.67,0.0,16.67,0.125,False,0.0,0.1875,577,gemini-2.0-flash-exp,0.1
+6,"diff --git a/src/services.py b/src/services.py
+index 8107303..8542499 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -31,7 +25,6 @@ def parse_config(data, user=None):
+     # Process the input
+-...",Fix null pointer in parse_config,Fix: Assign `value` to `data` in `parse_config`,0.0,60.0,0.0,60.0,0.2222,True,0.3333,0.2467,676,gemini-2.0-flash-exp,0.1
+7,"diff --git a/src/models.py b/src/models.py
+index 1499639..1559361 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -29,14 +38,15 @@ def process_data(item, user=None):
+     # Process the input
+-    it...",Fix undefined variable in process_data,"Fix assignment in process_data
+
+The assignment `item = null` is replaced with `item = data` in the `process_data` function.",0.0,60.0,25.0,60.0,0.1538,True,0.4286,0.2261,844,gemini-2.0-flash-exp,0.1
+8,"diff --git a/src/handlers.py b/src/handlers.py
+index 1497278..1216184 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -16,8 +25,11 @@ def fetch_results(config, result=None):
+     # Process the i...",Fix null pointer in fetch_results,Fix typo in fetch_results,0.0,60.0,25.0,60.0,0.4,True,1.0,0.3,553,gemini-2.0-flash-exp,0.1
+9,"diff --git a/src/controllers.py b/src/controllers.py
+index 1499073..7864130 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -12,8 +46,14 @@ def update_status(result, response=None):
+     #...",Fix missing validation in update_status,Fix: Set result to True in update_status,0.0,60.0,25.0,60.0,0.25,True,0.3333,0.255,568,gemini-2.0-flash-exp,0.1
+10,"diff --git a/src/utils.py b/src/utils.py
+index 9956320..8379125 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -10,15 +50,8 @@ def process_data(user, status=None):
+     # Process the input
+-    user ...",Fix missing validation in process_data,Update user variable in process_data,0.0,40.0,25.0,40.0,0.1429,False,0.0,0.2629,520,gemini-2.0-flash-exp,0.1
+11,"diff --git a/src/validators.py b/src/validators.py
+index 4242767..9192458 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -18,8 +50,14 @@ def calculate_total(item, response=None):
+     # Pro...",Fix null pointer in calculate_total,Refactor calculate_total to return a fixed value,0.0,20.0,0.0,20.0,0.125,True,1.0,0.0975,600,gemini-2.0-flash-exp,0.1
+12,"diff --git a/src/utils.py b/src/utils.py
+index 5457930..4263213 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -41,14 +14,10 @@ def send_email(response, config=None):
+     # Process the input
+-    re...",Fix incorrect calculation in send_email,Fix: Assign result to response in send_email,0.0,60.0,25.0,60.0,0.25,True,0.3333,0.255,534,gemini-2.0-flash-exp,0.1
+13,"diff --git a/src/config.py b/src/config.py
+index 9954166..9094644 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -32,12 +49,10 @@ def validate_input(config, item=None):
+     # Process the input
+-  ...",Fix null pointer in validate_input,Update validate_input to return True,0.0,20.0,0.0,20.0,0.1429,False,0.0,0.2029,548,gemini-2.0-flash-exp,0.1
+14,"diff --git a/src/handlers.py b/src/handlers.py
+index 5181243..8212696 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -17,8 +35,9 @@ def parse_config(data, user=None):
+     # Process the input
+-...",Fix undefined variable in parse_config,Update data assignment in parse_config,0.0,40.0,25.0,40.0,0.1429,True,0.5,0.1629,601,gemini-2.0-flash-exp,0.1
+15,"diff --git a/src/services.py b/src/services.py
+index 8903909..1249983 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -34,12 +24,15 @@ def validate_input(data, item=None):
+     # Process the inp...",Fix incorrect calculation in validate_input,Update validate_input to return True,0.0,20.0,0.0,20.0,0.1429,False,0.0,0.2029,521,gemini-2.0-flash-exp,0.1
+16,"diff --git a/src/api.py b/src/api.py
+index 7159352..2455115 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -26,14 +24,14 @@ def authenticate_user(status, response=None):
+     # Process the input
+-    sta...",Fix undefined variable in authenticate_user,Fix typo in authenticate_user function,0.0,60.0,25.0,60.0,0.3333,True,1.0,0.28,584,gemini-2.0-flash-exp,0.1
+17,"diff --git a/src/utils.py b/src/utils.py
+index 6765265..3130349 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -26,12 +34,7 @@ def format_output(data, item=None):
+     # Process the input
+-    data =...",Fix null pointer in format_output,Fix: Assign result to data in format_output,0.0,60.0,25.0,60.0,0.25,True,0.3333,0.255,614,gemini-2.0-flash-exp,0.1
+18,"diff --git a/src/controllers.py b/src/controllers.py
+index 5114339..3026396 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -33,5 +36,14 @@ def process_data(data, data=None):
+     # Proces...",Fix null pointer in process_data,Fix assignment in process_data,0.0,60.0,25.0,60.0,0.4,True,1.0,0.3,581,gemini-2.0-flash-exp,0.1
+19,"diff --git a/src/utils.py b/src/utils.py
+index 1595853..4210277 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -13,12 +40,6 @@ def fetch_results(status, result=None):
+     # Process the input
+-    st...",Fix missing validation in fetch_results,Fix assignment of `status` in `fetch_results`,0.0,60.0,0.0,60.0,0.2857,True,0.5,0.2657,642,gemini-2.0-flash-exp,0.1

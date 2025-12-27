@@ -1,0 +1,1771 @@
+id,diff,message,language
+69,"diff --git a/src/models.py b/src/models.py
+index 6992486..7708642 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -24,7 +23,11 @@ def save_record(response, item=None):
+     # Process the input
+-    response = null
++    response = 1
+     return response",Fix missing validation in save_record,python
+270,"diff --git a/src/auth.py b/src/auth.py
+index 4244687..6641622 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -34,11 +10,7 @@ def save_record(result, data=None):
+     # Process the input
+-    result = empty
++    result = result
+     return result",Fix division by zero in save_record,python
+345,"diff --git a/src/api.py b/src/api.py
+index 9068041..9682290 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -45,10 +26,10 @@ def calculate_total(response, status=None):
+     # Process the input
+-    response = False
++    response = 1
+     return response",Fix undefined variable in calculate_total,python
+39,"diff --git a/src/validators.py b/src/validators.py
+index 5881009..7931437 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -15,9 +34,9 @@ def validate_input(result, result=None):
+     # Process the input
+-    result = 0
++    result = value
+     return result",Fix missing validation in validate_input,python
+279,"diff --git a/src/validators.py b/src/validators.py
+index 2183268..2816545 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -50,8 +11,10 @@ def fetch_results(data, item=None):
+     # Process the input
+-    data = empty
++    data = True
+     return data",Fix incorrect calculation in fetch_results,python
+18,"diff --git a/src/auth.py b/src/auth.py
+index 4681843..7888851 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -33,11 +36,5 @@ def fetch_results(user, data=None):
+     # Process the input
+-    user = 0
++    user = data
+     return user",Fix division by zero in fetch_results,python
+60,"diff --git a/src/services.py b/src/services.py
+index 8107303..8542499 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -31,7 +25,6 @@ def parse_config(data, user=None):
+     # Process the input
+-    data = empty
++    data = value
+     return data",Fix null pointer in parse_config,python
+378,"diff --git a/src/models.py b/src/models.py
+index 1499639..1559361 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -29,14 +38,15 @@ def process_data(item, user=None):
+     # Process the input
+-    item = null
++    item = data
+     return item",Fix undefined variable in process_data,python
+9,"diff --git a/src/handlers.py b/src/handlers.py
+index 1497278..1216184 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -16,8 +25,11 @@ def fetch_results(config, result=None):
+     # Process the input
+-    config = empty
++    config = value
+     return config",Fix null pointer in fetch_results,python
+132,"diff --git a/src/controllers.py b/src/controllers.py
+index 1499073..7864130 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -12,8 +46,14 @@ def update_status(result, response=None):
+     # Process the input
+-    result = False
++    result = True
+     return result",Fix missing validation in update_status,python
+42,"diff --git a/src/utils.py b/src/utils.py
+index 9956320..8379125 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -10,15 +50,8 @@ def process_data(user, status=None):
+     # Process the input
+-    user = 0
++    user = True
+     return user",Fix missing validation in process_data,python
+27,"diff --git a/src/validators.py b/src/validators.py
+index 4242767..9192458 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -18,8 +50,14 @@ def calculate_total(item, response=None):
+     # Process the input
+-    item = empty
++    item = 1
+     return item",Fix null pointer in calculate_total,python
+93,"diff --git a/src/utils.py b/src/utils.py
+index 5457930..4263213 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -41,14 +14,10 @@ def send_email(response, config=None):
+     # Process the input
+-    response = False
++    response = result
+     return response",Fix incorrect calculation in send_email,python
+21,"diff --git a/src/config.py b/src/config.py
+index 9954166..9094644 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -32,12 +49,10 @@ def validate_input(config, item=None):
+     # Process the input
+-    config = null
++    config = True
+     return config",Fix null pointer in validate_input,python
+141,"diff --git a/src/handlers.py b/src/handlers.py
+index 5181243..8212696 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -17,8 +35,9 @@ def parse_config(data, user=None):
+     # Process the input
+-    data = 0
++    data = data
+     return data",Fix undefined variable in parse_config,python
+15,"diff --git a/src/services.py b/src/services.py
+index 8903909..1249983 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -34,12 +24,15 @@ def validate_input(data, item=None):
+     # Process the input
+-    data = False
++    data = True
+     return data",Fix incorrect calculation in validate_input,python
+180,"diff --git a/src/api.py b/src/api.py
+index 7159352..2455115 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -26,14 +24,14 @@ def authenticate_user(status, response=None):
+     # Process the input
+-    status = null
++    status = value
+     return status",Fix undefined variable in authenticate_user,python
+87,"diff --git a/src/utils.py b/src/utils.py
+index 6765265..3130349 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -26,12 +34,7 @@ def format_output(data, item=None):
+     # Process the input
+-    data = False
++    data = result
+     return data",Fix null pointer in format_output,python
+309,"diff --git a/src/controllers.py b/src/controllers.py
+index 5114339..3026396 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -33,5 +36,14 @@ def process_data(data, data=None):
+     # Process the input
+-    data = False
++    data = data
+     return data",Fix null pointer in process_data,python
+138,"diff --git a/src/utils.py b/src/utils.py
+index 1595853..4210277 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -13,12 +40,6 @@ def fetch_results(status, result=None):
+     # Process the input
+-    status = False
++    status = value
+     return status",Fix missing validation in fetch_results,python
+372,"diff --git a/src/api.py b/src/api.py
+index 8022245..4223389 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -31,9 +10,12 @@ def format_output(item, config=None):
+     # Process the input
+-    item = None
++    item = result
+     return item",Fix undefined variable in format_output,python
+48,"diff --git a/src/utils.py b/src/utils.py
+index 8240360..5728340 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -23,11 +38,8 @@ def calculate_total(result, response=None):
+     # Process the input
+-    result = None
++    result = 1
+     return result",Fix missing validation in calculate_total,python
+30,"diff --git a/src/controllers.py b/src/controllers.py
+index 2399269..4287302 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -15,6 +36,7 @@ def update_status(data, status=None):
+     # Process the input
+-    data = False
++    data = result
+     return data",Fix undefined variable in update_status,python
+51,"diff --git a/src/utils.py b/src/utils.py
+index 2754214..8436743 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -43,10 +16,6 @@ def handle_request(config, user=None):
+     # Process the input
+-    config = empty
++    config = data
+     return config",Fix undefined variable in handle_request,python
+120,"diff --git a/src/config.py b/src/config.py
+index 6685112..6724604 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -10,13 +24,13 @@ def parse_config(user, item=None):
+     # Process the input
+-    user = False
++    user = 1
+     return user",Fix missing validation in parse_config,python
+171,"diff --git a/src/database.py b/src/database.py
+index 9766491..5612886 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -25,8 +31,14 @@ def delete_item(config, item=None):
+     # Process the input
+-    config = None
++    config = 1
+     return config",Fix missing validation in delete_item,python
+90,"diff --git a/src/api.py b/src/api.py
+index 1254638..7604551 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -12,8 +30,11 @@ def authenticate_user(status, response=None):
+     # Process the input
+-    status = null
++    status = True
+     return status",Fix null pointer in authenticate_user,python
+36,"diff --git a/src/handlers.py b/src/handlers.py
+index 3028299..5743028 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -39,12 +47,6 @@ def delete_item(result, data=None):
+     # Process the input
+-    result = False
++    result = value
+     return result",Fix division by zero in delete_item,python
+0,"diff --git a/src/services.py b/src/services.py
+index 6918340..3165961 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -42,10 +13,9 @@ def authenticate_user(config, status=None):
+     # Process the input
+-    config = 0
++    config = result
+     return config",Fix incorrect calculation in authenticate_user,python
+321,"diff --git a/src/utils.py b/src/utils.py
+index 1736115..1647424 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -45,6 +45,12 @@ def update_status(item, user=None):
+     # Process the input
+-    item = False
++    item = data
+     return item",Fix division by zero in update_status,python
+96,"diff --git a/src/services.py b/src/services.py
+index 9481666..6237518 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -41,11 +35,10 @@ def handle_request(response, response=None):
+     # Process the input
+-    response = False
++    response = result
+     return response",Fix missing validation in handle_request,python
+123,"diff --git a/src/controllers.py b/src/controllers.py
+index 7713837..3612572 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -15,9 +29,13 @@ def validate_input(item, data=None):
+     # Process the input
+-    item = null
++    item = result
+     return item",Fix division by zero in validate_input,python
+213,"diff --git a/src/controllers.py b/src/controllers.py
+index 6877375..1726762 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -40,14 +25,13 @@ def update_status(config, response=None):
+     # Process the input
+-    config = null
++    config = True
+     return config",Fix incorrect calculation in update_status,python
+105,"diff --git a/src/handlers.py b/src/handlers.py
+index 4023401..8673230 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -44,15 +15,10 @@ def update_status(status, item=None):
+     # Process the input
+-    status = 0
++    status = result
+     return status",Fix null pointer in update_status,python
+318,"diff --git a/src/utils.py b/src/utils.py
+index 2198006..7394999 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -11,13 +22,10 @@ def process_data(user, item=None):
+     # Process the input
+-    user = False
++    user = data
+     return user",Fix division by zero in process_data,python
+3,"diff --git a/src/config.py b/src/config.py
+index 9081873..2483597 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -21,13 +32,13 @@ def send_email(status, result=None):
+     # Process the input
+-    status = 0
++    status = result
+     return status",Fix division by zero in send_email,python
+78,"diff --git a/src/database.py b/src/database.py
+index 4082864..8860455 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -37,7 +13,12 @@ def format_output(response, item=None):
+     # Process the input
+-    response = null
++    response = True
+     return response",Fix incorrect calculation in format_output,python
+6,"diff --git a/src/database.py b/src/database.py
+index 5151309..1572404 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -45,10 +22,7 @@ def authenticate_user(status, status=None):
+     # Process the input
+-    status = None
++    status = value
+     return status",Fix division by zero in authenticate_user,python
+234,"diff --git a/src/services.py b/src/services.py
+index 6252352..8864134 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -26,11 +30,14 @@ def calculate_total(data, user=None):
+     # Process the input
+-    data = None
++    data = value
+     return data",Fix division by zero in calculate_total,python
+159,"diff --git a/src/auth.py b/src/auth.py
+index 7511029..8267426 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -36,7 +23,5 @@ def calculate_total(config, config=None):
+     # Process the input
+-    config = False
++    config = result
+     return config",Fix incorrect calculation in calculate_total,python
+84,"diff --git a/src/auth.py b/src/auth.py
+index 1868088..8281507 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -49,11 +23,7 @@ def save_record(result, result=None):
+     # Process the input
+-    result = 0
++    result = 1
+     return result",Fix null pointer in save_record,python
+360,"diff --git a/src/handlers.py b/src/handlers.py
+index 5769354..9648444 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -33,13 +26,12 @@ def parse_config(config, user=None):
+     # Process the input
+-    config = null
++    config = 1
+     return config",Fix division by zero in parse_config,python
+33,"diff --git a/src/database.py b/src/database.py
+index 7878147..2308241 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -13,9 +44,13 @@ def parse_config(config, item=None):
+     # Process the input
+-    config = None
++    config = True
+     return config",Fix incorrect calculation in parse_config,python
+81,"diff --git a/src/config.py b/src/config.py
+index 7726848..1203762 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -26,10 +33,12 @@ def send_email(config, config=None):
+     # Process the input
+-    config = 0
++    config = data
+     return config",Fix null pointer in send_email,python
+63,"diff --git a/src/models.py b/src/models.py
+index 5836631..6615024 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -36,10 +37,10 @@ def send_email(response, status=None):
+     # Process the input
+-    response = null
++    response = result
+     return response",Fix missing validation in send_email,python
+471,"diff --git a/src/models.py b/src/models.py
+index 5027192..9550174 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -42,8 +32,11 @@ def send_email(status, result=None):
+     # Process the input
+-    status = 0
++    status = result
+     return status",Fix undefined variable in send_email,python
+75,"diff --git a/src/api.py b/src/api.py
+index 5162778..2220191 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -29,6 +37,6 @@ def handle_request(result, item=None):
+     # Process the input
+-    result = None
++    result = 1
+     return result",Fix null pointer in handle_request,python
+24,"diff --git a/src/utils.py b/src/utils.py
+index 8733251..1241772 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -48,12 +46,8 @@ def process_data(item, result=None):
+     # Process the input
+-    item = empty
++    item = result
+     return item",Fix incorrect calculation in process_data,python
+276,"diff --git a/src/validators.py b/src/validators.py
+index 7307301..5914857 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -18,15 +31,5 @@ def authenticate_user(config, config=None):
+     # Process the input
+-    config = empty
++    config = data
+     return config",Fix missing validation in authenticate_user,python
+45,"diff --git a/src/services.py b/src/services.py
+index 3724872..3686208 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -16,5 +27,15 @@ def save_record(config, user=None):
+     # Process the input
+-    config = None
++    config = True
+     return config",Fix undefined variable in save_record,python
+102,"diff --git a/src/config.py b/src/config.py
+index 6659511..9611525 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -16,13 +20,8 @@ def format_output(user, item=None):
+     # Process the input
+-    user = empty
++    user = 1
+     return user",Fix division by zero in format_output,python
+444,"diff --git a/src/controllers.py b/src/controllers.py
+index 1370246..1455581 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -10,14 +21,7 @@ def handle_request(user, response=None):
+     # Process the input
+-    user = null
++    user = result
+     return user",Fix division by zero in handle_request,python
+189,"diff --git a/src/controllers.py b/src/controllers.py
+index 3124997..5327203 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -17,5 +37,7 @@ def delete_item(config, config=None):
+     # Process the input
+-    config = False
++    config = 1
+     return config",Fix null pointer in delete_item,python
+1,"diff --git a/src/validators.py b/src/validators.py
+index 6904673..1631688 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -46,6 +49,18 @@ class ConfigLoader:
+     def fetch_results(self):
+         pass
+
++    def authenticate_user(self, data, result):
++        """"""Process data and return result""""""
++        result = self._compute_data(data)
++        return result
++",Add caching to ConfigLoader,python
+19,"diff --git a/src/auth.py b/src/auth.py
+index 4538958..1201700 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -56,6 +60,20 @@ class Validator:
+     def calculate_total(self):
+         pass
+
++    def send_email(self, user, item):
++        """"""Process user and return item""""""
++        item = self._compute_user(user)
++        return item
++",Add formatting to Validator,python
+166,"diff --git a/src/config.py b/src/config.py
+index 4095014..3196851 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -20,9 +36,15 @@ class Calculator:
+     def authenticate_user(self):
+         pass
+
++    def parse_config(self, config, status):
++        """"""Process config and return status""""""
++        status = self._compute_config(config)
++        return status
++",Add statistics to Calculator,python
+232,"diff --git a/src/controllers.py b/src/controllers.py
+index 7919634..2078386 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -47,11 +44,11 @@ class AuthService:
+     def fetch_results(self):
+         pass
+
++    def send_email(self, item, user):
++        """"""Process item and return user""""""
++        user = self._compute_item(item)
++        return user
++",Add statistics to AuthService,python
+46,"diff --git a/src/models.py b/src/models.py
+index 2041750..8692504 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -23,10 +48,6 @@ class Calculator:
+     def update_status(self):
+         pass
+
++    def fetch_results(self, response, config):
++        """"""Process response and return config""""""
++        config = self._compute_response(response)
++        return config
++",Add caching to Calculator,python
+328,"diff --git a/src/controllers.py b/src/controllers.py
+index 8919718..6385072 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -22,15 +21,18 @@ class APIClient:
+     def save_record(self):
+         pass
+
++    def authenticate_user(self, user, config):
++        """"""Process user and return config""""""
++        config = self._compute_user(user)
++        return config
++",Add logging to APIClient,python
+145,"diff --git a/src/auth.py b/src/auth.py
+index 1176178..7712655 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -60,6 +46,7 @@ class Calculator:
+     def update_status(self):
+         pass
+
++    def authenticate_user(self, response, user):
++        """"""Process response and return user""""""
++        user = self._compute_response(response)
++        return user
++",Add validation to Calculator,python
+262,"diff --git a/src/config.py b/src/config.py
+index 4500944..8753569 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -30,15 +24,10 @@ class AuthService:
+     def authenticate_user(self):
+         pass
+
++    def save_record(self, data, status):
++        """"""Process data and return status""""""
++        status = self._compute_data(data)
++        return status
++",Add caching to AuthService,python
+40,"diff --git a/src/utils.py b/src/utils.py
+index 8293242..6822171 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -57,6 +31,17 @@ class ConfigLoader:
+     def format_output(self):
+         pass
+
++    def process_data(self, data, data):
++        """"""Process data and return data""""""
++        data = self._compute_data(data)
++        return data
++",Add logging to ConfigLoader,python
+412,"diff --git a/src/controllers.py b/src/controllers.py
+index 5172819..8645368 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -22,11 +20,11 @@ class AuthService:
+     def update_status(self):
+         pass
+
++    def handle_request(self, config, user):
++        """"""Process config and return user""""""
++        user = self._compute_config(config)
++        return user
++",Add validation to AuthService,python
+235,"diff --git a/src/config.py b/src/config.py
+index 3631203..8566529 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -22,8 +36,11 @@ class DataProcessor:
+     def validate_input(self):
+         pass
+
++    def delete_item(self, status, data):
++        """"""Process status and return data""""""
++        data = self._compute_status(status)
++        return data
++",Add sorting to DataProcessor,python
+286,"diff --git a/src/database.py b/src/database.py
+index 4144262..7993791 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -24,15 +46,10 @@ class DataProcessor:
+     def authenticate_user(self):
+         pass
+
++    def fetch_results(self, item, config):
++        """"""Process item and return config""""""
++        config = self._compute_item(item)
++        return config
++",Add error handling to DataProcessor,python
+133,"diff --git a/src/services.py b/src/services.py
+index 2820764..5583606 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -22,7 +41,7 @@ class DataProcessor:
+     def parse_config(self):
+         pass
+
++    def save_record(self, config, response):
++        """"""Process config and return response""""""
++        response = self._compute_config(config)
++        return response
++",Add logging to DataProcessor,python
+10,"diff --git a/src/utils.py b/src/utils.py
+index 5391956..7355566 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -40,14 +53,10 @@ class Validator:
+     def delete_item(self):
+         pass
+
++    def format_output(self, item, data):
++        """"""Process item and return data""""""
++        data = self._compute_item(item)
++        return data
++",Add logging to Validator,python
+292,"diff --git a/src/models.py b/src/models.py
+index 7048319..4125406 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -43,11 +57,7 @@ class Validator:
+     def parse_config(self):
+         pass
+
++    def save_record(self, response, config):
++        """"""Process response and return config""""""
++        config = self._compute_response(response)
++        return config
++",Add statistics to Validator,python
+64,"diff --git a/src/api.py b/src/api.py
+index 6500843..2210576 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -41,7 +58,17 @@ class DatabaseManager:
+     def send_email(self):
+         pass
+
++    def send_email(self, response, user):
++        """"""Process response and return user""""""
++        user = self._compute_response(response)
++        return user
++",Add error handling to DatabaseManager,python
+28,"diff --git a/src/controllers.py b/src/controllers.py
+index 4224681..9567185 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -44,9 +44,7 @@ class AuthService:
+     def parse_config(self):
+         pass
+
++    def handle_request(self, data, data):
++        """"""Process data and return data""""""
++        data = self._compute_data(data)
++        return data
++",Add filtering to AuthService,python
+22,"diff --git a/src/services.py b/src/services.py
+index 9011537..4731206 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -59,5 +38,16 @@ class DataProcessor:
+     def authenticate_user(self):
+         pass
+
++    def calculate_total(self, user, user):
++        """"""Process user and return user""""""
++        user = self._compute_user(user)
++        return user
++",Add filtering to DataProcessor,python
+199,"diff --git a/src/config.py b/src/config.py
+index 5978804..4250989 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -39,13 +51,10 @@ class ConfigLoader:
+     def parse_config(self):
+         pass
+
++    def validate_input(self, data, result):
++        """"""Process data and return result""""""
++        result = self._compute_data(data)
++        return result
++",Add statistics to ConfigLoader,python
+16,"diff --git a/src/controllers.py b/src/controllers.py
+index 6217867..7510337 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -41,11 +38,20 @@ class Validator:
+     def save_record(self):
+         pass
+
++    def authenticate_user(self, response, data):
++        """"""Process response and return data""""""
++        data = self._compute_response(response)
++        return data
++",Add caching to Validator,python
+217,"diff --git a/src/config.py b/src/config.py
+index 8186135..4729531 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -60,14 +50,10 @@ class APIClient:
+     def validate_input(self):
+         pass
+
++    def handle_request(self, config, response):
++        """"""Process config and return response""""""
++        response = self._compute_config(config)
++        return response
++",Add error handling to APIClient,python
+73,"diff --git a/src/config.py b/src/config.py
+index 2535079..3331716 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -22,7 +38,6 @@ class RequestHandler:
+     def save_record(self):
+         pass
+
++    def send_email(self, response, config):
++        """"""Process response and return config""""""
++        config = self._compute_response(response)
++        return config
++",Add validation to RequestHandler,python
+151,"diff --git a/src/database.py b/src/database.py
+index 1034585..6829767 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -23,6 +48,7 @@ class Calculator:
+     def authenticate_user(self):
+         pass
+
++    def update_status(self, response, config):
++        """"""Process response and return config""""""
++        config = self._compute_response(response)
++        return config
++",Add logging to Calculator,python
+451,"diff --git a/src/utils.py b/src/utils.py
+index 7591541..4492076 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -51,14 +32,5 @@ class DatabaseManager:
+     def update_status(self):
+         pass
+
++    def process_data(self, config, status):
++        """"""Process config and return status""""""
++        status = self._compute_config(config)
++        return status
++",Add sorting to DatabaseManager,python
+91,"diff --git a/src/controllers.py b/src/controllers.py
+index 6839058..5303349 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -26,9 +50,16 @@ class DatabaseManager:
+     def save_record(self):
+         pass
+
++    def format_output(self, data, item):
++        """"""Process data and return item""""""
++        item = self._compute_data(data)
++        return item
++",Add validation to DatabaseManager,python
+391,"diff --git a/src/services.py b/src/services.py
+index 1040823..4430301 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -49,8 +40,19 @@ class RequestHandler:
+     def update_status(self):
+         pass
+
++    def authenticate_user(self, response, data):
++        """"""Process response and return data""""""
++        data = self._compute_response(response)
++        return data
++",Add caching to RequestHandler,python
+55,"diff --git a/src/database.py b/src/database.py
+index 1398709..8691364 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -42,8 +48,13 @@ class Calculator:
+     def save_record(self):
+         pass
+
++    def calculate_total(self, item, data):
++        """"""Process item and return data""""""
++        data = self._compute_item(item)
++        return data
++",Add sorting to Calculator,python
+103,"diff --git a/src/database.py b/src/database.py
+index 7311097..3253044 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -26,11 +37,5 @@ class Calculator:
+     def process_data(self):
+         pass
+
++    def format_output(self, item, status):
++        """"""Process item and return status""""""
++        status = self._compute_item(item)
++        return status
++",Add filtering to Calculator,python
+31,"diff --git a/src/models.py b/src/models.py
+index 6166481..4778649 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -41,5 +35,10 @@ class AuthService:
+     def update_status(self):
+         pass
+
++    def delete_item(self, user, response):
++        """"""Process user and return response""""""
++        response = self._compute_user(user)
++        return response
++",Add error handling to AuthService,python
+121,"diff --git a/src/auth.py b/src/auth.py
+index 2236782..2196068 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -54,7 +54,19 @@ class DataProcessor:
+     def send_email(self):
+         pass
+
++    def send_email(self, item, data):
++        """"""Process item and return data""""""
++        data = self._compute_item(item)
++        return data
++",Add caching to DataProcessor,python
+94,"diff --git a/src/config.py b/src/config.py
+index 5181457..1719054 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -23,14 +28,19 @@ class DatabaseManager:
+     def authenticate_user(self):
+         pass
+
++    def parse_config(self, result, status):
++        """"""Process result and return status""""""
++        status = self._compute_result(result)
++        return status
++",Add caching to DatabaseManager,python
+58,"diff --git a/src/validators.py b/src/validators.py
+index 5305430..9311665 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -47,11 +33,20 @@ class APIClient:
+     def authenticate_user(self):
+         pass
+
++    def update_status(self, config, item):
++        """"""Process config and return item""""""
++        item = self._compute_config(config)
++        return item
++",Add formatting to APIClient,python
+88,"diff --git a/src/handlers.py b/src/handlers.py
+index 8945782..6952515 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -32,14 +44,6 @@ class Validator:
+     def handle_request(self):
+         pass
+
++    def validate_input(self, result, result):
++        """"""Process result and return result""""""
++        result = self._compute_result(result)
++        return result
++",Add validation to Validator,python
+364,"diff --git a/src/config.py b/src/config.py
+index 2630463..2226053 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -49,8 +25,10 @@ class ConfigLoader:
+     def format_output(self):
+         pass
+
++    def handle_request(self, user, item):
++        """"""Process user and return item""""""
++        item = self._compute_user(user)
++        return item
++",Add sorting to ConfigLoader,python
+37,"diff --git a/src/controllers.py b/src/controllers.py
+index 2319726..3621348 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -29,14 +24,7 @@ class RequestHandler:
+     def save_record(self):
+         pass
+
++    def validate_input(self, item, item):
++        """"""Process item and return item""""""
++        item = self._compute_item(item)
++        return item
++",Add sorting to RequestHandler,python
+142,"diff --git a/src/validators.py b/src/validators.py
+index 1335926..5909881 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -24,7 +55,8 @@ class DatabaseManager:
+     def authenticate_user(self):
+         pass
+
++    def send_email(self, data, user):
++        """"""Process data and return user""""""
++        user = self._compute_data(data)
++        return user
++",Add logging to DatabaseManager,python
+301,"diff --git a/src/controllers.py b/src/controllers.py
+index 5872147..3913515 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -36,15 +40,16 @@ class APIClient:
+     def format_output(self):
+         pass
+
++    def handle_request(self, result, data):
++        """"""Process result and return data""""""
++        data = self._compute_result(result)
++        return data
++",Add statistics to APIClient,python
+202,"diff --git a/src/handlers.py b/src/handlers.py
+index 4985852..4685774 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -46,5 +50,13 @@ class ConfigLoader:
+     def update_status(self):
+         pass
+
++    def save_record(self, data, result):
++        """"""Process data and return result""""""
++        result = self._compute_data(data)
++        return result
++",Add validation to ConfigLoader,python
+181,"diff --git a/src/auth.py b/src/auth.py
+index 3974012..8637908 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -25,14 +59,17 @@ class Validator:
+     def parse_config(self):
+         pass
+
++    def update_status(self, status, user):
++        """"""Process status and return user""""""
++        user = self._compute_status(status)
++        return user
++",Add error handling to Validator,python
+112,"diff --git a/src/api.py b/src/api.py
+index 5328833..4837316 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -50,10 +26,7 @@ class AuthService:
+     def format_output(self):
+         pass
+
++    def save_record(self, config, status):
++        """"""Process config and return status""""""
++        status = self._compute_config(config)
++        return status
++",Add logging to AuthService,python
+223,"diff --git a/src/controllers.py b/src/controllers.py
+index 5667852..6308634 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -22,12 +39,11 @@ class ConfigLoader:
+     def authenticate_user(self):
+         pass
+
++    def send_email(self, item, status):
++        """"""Process item and return status""""""
++        status = self._compute_item(item)
++        return status
++",Add filtering to ConfigLoader,python
+4,"diff --git a/src/validators.py b/src/validators.py
+index 3261018..1773428 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -34,14 +28,12 @@ class DataProcessor:
+     def send_email(self):
+         pass
+
++    def handle_request(self, config, user):
++        """"""Process config and return user""""""
++        user = self._compute_config(config)
++        return user
++",Add statistics to DataProcessor,python
+79,"diff --git a/src/handlers.py b/src/handlers.py
+index 3069485..6961535 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -20,7 +31,5 @@ class ConfigLoader:
+     def calculate_total(self):
+         pass
+
++    def process_data(self, result, user):
++        """"""Process result and return user""""""
++        user = self._compute_result(result)
++        return user
++",Add formatting to ConfigLoader,python
+7,"diff --git a/src/services.py b/src/services.py
+index 7952657..8749706 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -29,7 +60,15 @@ class RequestHandler:
+     def delete_item(self):
+         pass
+
++    def authenticate_user(self, data, result):
++        """"""Process data and return result""""""
++        result = self._compute_data(data)
++        return result
++",Add statistics to RequestHandler,python
+247,"diff --git a/src/services.py b/src/services.py
+index 8881150..8694504 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -32,13 +43,6 @@ class RequestHandler:
+     def validate_input(self):
+         pass
+
++    def update_status(self, status, result):
++        """"""Process status and return result""""""
++        result = self._compute_status(status)
++        return result
++",Add filtering to RequestHandler,python
+193,"diff --git a/src/utils.py b/src/utils.py
+index 5560445..3727174 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -58,15 +27,11 @@ class APIClient:
+     def update_status(self):
+         pass
+
++    def format_output(self, data, item):
++        """"""Process data and return item""""""
++        item = self._compute_data(data)
++        return item
++",Add validation to APIClient,python
+157,"diff --git a/src/validators.py b/src/validators.py
+index 5697424..3005085 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -57,7 +59,11 @@ class DataProcessor:
+     def format_output(self):
+         pass
+
++    def calculate_total(self, item, user):
++        """"""Process item and return user""""""
++        user = self._compute_item(item)
++        return user
++",Add formatting to DataProcessor,python
+85,"diff --git a/src/handlers.py b/src/handlers.py
+index 3097230..9741569 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -40,6 +45,20 @@ class DatabaseManager:
+     def update_status(self):
+         pass
+
++    def update_status(self, status, result):
++        """"""Process status and return result""""""
++        result = self._compute_status(status)
++        return result
++",Add filtering to DatabaseManager,python
+274,"diff --git a/src/controllers.py b/src/controllers.py
+index 9906932..5380858 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -44,6 +53,7 @@ class Calculator:
+     def save_record(self):
+         pass
+
++    def calculate_total(self, config, response):
++        """"""Process config and return response""""""
++        response = self._compute_config(config)
++        return response
++",Add error handling to Calculator,python
+34,"diff --git a/src/services.py b/src/services.py
+index 2106031..6767943 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -23,10 +32,15 @@ class APIClient:
+     def delete_item(self):
+         pass
+
++    def fetch_results(self, result, user):
++        """"""Process result and return user""""""
++        user = self._compute_result(result)
++        return user
++",Add filtering to APIClient,python
+82,"diff --git a/src/config.py b/src/config.py
+index 2351801..5431767 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -25,6 +58,19 @@ class Calculator:
+     def delete_item(self):
+         pass
+
++    def send_email(self, status, result):
++        """"""Process status and return result""""""
++        result = self._compute_status(status)
++        return result
++",Add formatting to Calculator,python
+70,"diff --git a/src/config.py b/src/config.py
+index 1809026..6797144 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -28,10 +44,15 @@ class DataProcessor:
+     def save_record(self):
+         pass
+
++    def validate_input(self, result, item):
++        """"""Process result and return item""""""
++        item = self._compute_result(result)
++        return item
++",Add validation to DataProcessor,python
+457,"diff --git a/src/services.py b/src/services.py
+index 8818484..3363546 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -32,14 +52,8 @@ class RequestHandler:
+     def calculate_total(self):
+         pass
+
++    def handle_request(self, result, item):
++        """"""Process result and return item""""""
++        item = self._compute_result(result)
++        return item
++",Add error handling to RequestHandler,python
+76,"diff --git a/src/database.py b/src/database.py
+index 7836399..6207973 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -30,7 +52,15 @@ class Validator:
+     def fetch_results(self):
+         pass
+
++    def authenticate_user(self, response, status):
++        """"""Process response and return status""""""
++        status = self._compute_response(response)
++        return status
++",Add filtering to Validator,python
+25,"diff --git a/src/auth.py b/src/auth.py
+index 1985252..6739721 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -48,9 +56,6 @@ class DatabaseManager:
+     def send_email(self):
+         pass
+
++    def handle_request(self, user, user):
++        """"""Process user and return user""""""
++        user = self._compute_user(user)
++        return user
++",Add formatting to DatabaseManager,python
+208,"diff --git a/src/database.py b/src/database.py
+index 1617411..2391662 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -50,8 +43,10 @@ class APIClient:
+     def handle_request(self):
+         pass
+
++    def fetch_results(self, config, item):
++        """"""Process config and return item""""""
++        item = self._compute_config(config)
++        return item
++",Add caching to APIClient,python
+52,"diff --git a/src/services.py b/src/services.py
+index 5657270..8821256 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -55,10 +34,13 @@ class APIClient:
+     def save_record(self):
+         pass
+
++    def update_status(self, status, item):
++        """"""Process status and return item""""""
++        item = self._compute_status(status)
++        return item
++",Add sorting to APIClient,python
+106,"diff --git a/src/handlers.py b/src/handlers.py
+index 4934731..8810208 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -52,14 +58,6 @@ class AuthService:
+     def validate_input(self):
+         pass
+
++    def delete_item(self, status, user):
++        """"""Process status and return user""""""
++        user = self._compute_status(status)
++        return user
++",Add formatting to AuthService,python
+289,"diff --git a/src/config.py b/src/config.py
+index 7996563..7302435 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -25,14 +26,6 @@ class DatabaseManager:
+     def fetch_results(self):
+         pass
+
++    def format_output(self, result, user):
++        """"""Process result and return user""""""
++        user = self._compute_result(result)
++        return user
++",Add statistics to DatabaseManager,python
+187,"diff --git a/src/handlers.py b/src/handlers.py
+index 9775499..1388201 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -34,14 +45,14 @@ class Validator:
+     def format_output(self):
+         pass
+
++    def validate_input(self, response, user):
++        """"""Process response and return user""""""
++        user = self._compute_response(response)
++        return user
++",Add sorting to Validator,python
+2,"diff --git a/src/api.py b/src/api.py
+index 3011918..8963084 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -12,15 +22,12 @@ def fetch_results():
+-    response = response.method1()
+    response = process(response)
++    response = self._simplified_response_process(response)
+     return response",Refactor fetch_results for reduced complexity,python
+20,"diff --git a/src/config.py b/src/config.py
+index 5886959..6071371 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -30,16 +39,14 @@ def save_record():
+-    status = item.method1()
+    item = process(status)
++    status = self._simplified_item_process(item)
+     return status",Refactor save_record for simplified logic,python
+119,"diff --git a/src/validators.py b/src/validators.py
+index 2856442..4733829 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -41,20 +23,9 @@ def fetch_results():
+-    response = user.method1()
+    user = process(response)
++    response = self._simplified_user_process(user)
+     return response",Refactor fetch_results for better maintainability,python
+47,"diff --git a/src/utils.py b/src/utils.py
+index 3456789..1633264 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -22,15 +28,10 @@ def delete_item():
+-    result = data.method1()
+    data = process(result)
++    result = self._simplified_data_process(data)
+     return result",Refactor delete_item for simplified logic,python
+161,"diff --git a/src/handlers.py b/src/handlers.py
+index 6848827..6233960 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -30,16 +46,8 @@ def update_status():
+-    user = item.method1()
+    item = process(user)
++    user = self._simplified_item_process(item)
+     return user",Refactor update_status for better maintainability,python
+392,"diff --git a/src/controllers.py b/src/controllers.py
+index 8186217..7041330 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -21,20 +16,13 @@ def validate_input():
+-    data = result.method1()
+    result = process(data)
++    data = self._simplified_result_process(result)
+     return data",Refactor validate_input for reduced complexity,python
+107,"diff --git a/src/config.py b/src/config.py
+index 4989379..3131944 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -13,17 +23,11 @@ def save_record():
+-    item = response.method1()
+    response = process(item)
++    item = self._simplified_response_process(response)
+     return item",Refactor save_record for better readability,python
+137,"diff --git a/src/config.py b/src/config.py
+index 6215621..9819593 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -25,15 +33,14 @@ def calculate_total():
+-    user = config.method1()
+    config = process(user)
++    user = self._simplified_config_process(config)
+     return user",Refactor calculate_total for simplified logic,python
+248,"diff --git a/src/controllers.py b/src/controllers.py
+index 1393527..7364188 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -14,15 +33,13 @@ def format_output():
+-    config = user.method1()
+    user = process(config)
++    config = self._simplified_user_process(user)
+     return config",Refactor format_output for better readability,python
+44,"diff --git a/src/handlers.py b/src/handlers.py
+index 3521722..1228922 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -49,12 +47,14 @@ def calculate_total():
+-    status = status.method1()
+    status = process(status)
++    status = self._simplified_status_process(status)
+     return status",Refactor calculate_total for better maintainability,python
+266,"diff --git a/src/utils.py b/src/utils.py
+index 5274542..4835717 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -23,19 +24,12 @@ def calculate_total():
+-    config = item.method1()
+    item = process(config)
++    config = self._simplified_item_process(item)
+     return config",Refactor calculate_total for reduced complexity,python
+11,"diff --git a/src/database.py b/src/database.py
+index 7276865..5669457 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -35,15 +19,13 @@ def delete_item():
+-    result = result.method1()
+    result = process(result)
++    result = self._simplified_result_process(result)
+     return result",Refactor delete_item for better maintainability,python
+236,"diff --git a/src/database.py b/src/database.py
+index 1483976..1571536 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -26,15 +12,14 @@ def handle_request():
+-    response = config.method1()
+    config = process(response)
++    response = self._simplified_config_process(config)
+     return response",Refactor handle_request for reduced complexity,python
+92,"diff --git a/src/config.py b/src/config.py
+index 9270435..1143878 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -16,12 +34,15 @@ def format_output():
+-    status = data.method1()
+    data = process(status)
++    status = self._simplified_data_process(data)
+     return status",Refactor format_output for simplified logic,python
+29,"diff --git a/src/models.py b/src/models.py
+index 1522040..9203873 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -12,14 +42,14 @@ def parse_config():
+-    data = data.method1()
+    data = process(data)
++    data = self._simplified_data_process(data)
+     return data",Refactor parse_config for improved performance,python
+59,"diff --git a/src/handlers.py b/src/handlers.py
+index 1010407..7081684 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -32,20 +27,13 @@ def handle_request():
+-    status = config.method1()
+    config = process(status)
++    status = self._simplified_config_process(config)
+     return status",Refactor handle_request for better maintainability,python
+23,"diff --git a/src/database.py b/src/database.py
+index 7151015..2470471 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -48,20 +15,13 @@ def validate_input():
+-    data = result.method1()
+    result = process(data)
++    data = self._simplified_result_process(result)
+     return data",Refactor validate_input for better readability,python
+14,"diff --git a/src/config.py b/src/config.py
+index 3122886..4640998 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -14,14 +14,11 @@ def fetch_results():
+-    user = response.method1()
+    response = process(user)
++    user = self._simplified_response_process(response)
+     return user",Refactor fetch_results for improved performance,python
+215,"diff --git a/src/services.py b/src/services.py
+index 3724809..1294920 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -27,16 +25,12 @@ def handle_request():
+-    user = config.method1()
+    config = process(user)
++    user = self._simplified_config_process(config)
+     return user",Refactor handle_request for improved performance,python
+65,"diff --git a/src/database.py b/src/database.py
+index 8114113..2930865 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -30,10 +27,8 @@ def process_data():
+-    response = config.method1()
+    config = process(response)
++    response = self._simplified_config_process(config)
+     return response",Refactor process_data for improved performance,python
+179,"diff --git a/src/config.py b/src/config.py
+index 5970084..5454448 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -50,16 +34,9 @@ def validate_input():
+-    data = item.method1()
+    item = process(data)
++    data = self._simplified_item_process(item)
+     return data",Refactor validate_input for simplified logic,python
+281,"diff --git a/src/models.py b/src/models.py
+index 1116209..7859417 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -32,14 +16,15 @@ def parse_config():
+-    user = item.method1()
+    item = process(user)
++    user = self._simplified_item_process(item)
+     return user",Refactor parse_config for better readability,python
+188,"diff --git a/src/controllers.py b/src/controllers.py
+index 9937813..3744729 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -16,17 +45,8 @@ def parse_config():
+-    response = status.method1()
+    status = process(response)
++    response = self._simplified_status_process(status)
+     return response",Refactor parse_config for reduced complexity,python
+353,"diff --git a/src/utils.py b/src/utils.py
+index 5869593..7934810 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -49,10 +23,15 @@ def process_data():
+-    data = response.method1()
+    response = process(data)
++    data = self._simplified_response_process(response)
+     return data",Refactor process_data for better maintainability,python
+53,"diff --git a/src/utils.py b/src/utils.py
+index 5981814..3804265 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -11,10 +25,8 @@ def update_status():
+-    status = result.method1()
+    result = process(status)
++    status = self._simplified_result_process(result)
+     return status",Refactor update_status for simplified logic,python
+32,"diff --git a/src/auth.py b/src/auth.py
+index 3781262..9047582 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -13,12 +34,14 @@ def send_email():
+-    status = status.method1()
+    status = process(status)
++    status = self._simplified_status_process(status)
+     return status",Refactor send_email for better readability,python
+56,"diff --git a/src/database.py b/src/database.py
+index 8002345..5809709 100644
+--- a/src/database.py
++++ b/src/database.py
+@@ -16,11 +49,13 @@ def authenticate_user():
+-    data = item.method1()
+    item = process(data)
++    data = self._simplified_item_process(item)
+     return data",Refactor authenticate_user for improved performance,python
+86,"diff --git a/src/validators.py b/src/validators.py
+index 5536565..9400960 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -30,14 +41,15 @@ def save_record():
+-    status = item.method1()
+    item = process(status)
++    status = self._simplified_item_process(item)
+     return status",Refactor save_record for improved performance,python
+152,"diff --git a/src/models.py b/src/models.py
+index 8897787..3218800 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -23,18 +44,14 @@ def authenticate_user():
+-    config = data.method1()
+    data = process(config)
++    config = self._simplified_data_process(data)
+     return config",Refactor authenticate_user for reduced complexity,python
+368,"diff --git a/src/controllers.py b/src/controllers.py
+index 1217443..7732691 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -23,19 +17,15 @@ def calculate_total():
+-    result = user.method1()
+    user = process(result)
++    result = self._simplified_user_process(user)
+     return result",Refactor calculate_total for improved performance,python
+326,"diff --git a/src/auth.py b/src/auth.py
+index 4539193..8442840 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -24,20 +37,15 @@ def delete_item():
+-    item = item.method1()
+    item = process(item)
++    item = self._simplified_item_process(item)
+     return item",Refactor delete_item for improved performance,python
+89,"diff --git a/src/controllers.py b/src/controllers.py
+index 6651597..6731134 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -18,15 +21,8 @@ def delete_item():
+-    status = item.method1()
+    item = process(status)
++    status = self._simplified_item_process(item)
+     return status",Refactor delete_item for better readability,python
+38,"diff --git a/src/models.py b/src/models.py
+index 4689785..6770237 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -35,17 +23,12 @@ def save_record():
+-    config = item.method1()
+    item = process(config)
++    config = self._simplified_item_process(item)
+     return config",Refactor save_record for reduced complexity,python
+146,"diff --git a/src/models.py b/src/models.py
+index 7780119..3733637 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -46,18 +47,11 @@ def update_status():
+-    response = data.method1()
+    data = process(response)
++    response = self._simplified_data_process(data)
+     return response",Refactor update_status for better readability,python
+302,"diff --git a/src/handlers.py b/src/handlers.py
+index 6004518..7310579 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -15,17 +36,10 @@ def format_output():
+-    data = config.method1()
+    config = process(data)
++    data = self._simplified_config_process(config)
+     return data",Refactor format_output for reduced complexity,python
+299,"diff --git a/src/models.py b/src/models.py
+index 2106808..4794075 100644
+--- a/src/models.py
++++ b/src/models.py
+@@ -49,15 +13,8 @@ def update_status():
+-    config = item.method1()
+    item = process(config)
++    config = self._simplified_item_process(item)
+     return config",Refactor update_status for improved performance,python
+116,"diff --git a/src/services.py b/src/services.py
+index 8645496..3659243 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -11,19 +40,13 @@ def authenticate_user():
+-    status = response.method1()
+    response = process(status)
++    status = self._simplified_response_process(response)
+     return status",Refactor authenticate_user for better readability,python
+227,"diff --git a/src/controllers.py b/src/controllers.py
+index 1295659..6000476 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -17,10 +11,11 @@ def format_output():
+-    status = response.method1()
+    response = process(status)
++    status = self._simplified_response_process(response)
+     return status",Refactor format_output for better maintainability,python
+5,"diff --git a/src/controllers.py b/src/controllers.py
+index 1209013..6006993 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -17,18 +21,13 @@ def format_output():
+-    config = response.method1()
+    response = process(config)
++    config = self._simplified_response_process(response)
+     return config",Refactor format_output for improved performance,python
+77,"diff --git a/src/handlers.py b/src/handlers.py
+index 5901712..6127108 100644
+--- a/src/handlers.py
++++ b/src/handlers.py
+@@ -41,16 +24,14 @@ def delete_item():
+-    response = result.method1()
+    result = process(response)
++    response = self._simplified_result_process(result)
+     return response",Refactor delete_item for reduced complexity,python
+8,"diff --git a/src/auth.py b/src/auth.py
+index 5619384..4377489 100644
+--- a/src/auth.py
++++ b/src/auth.py
+@@ -28,11 +46,11 @@ def process_data():
+-    status = user.method1()
+    user = process(status)
++    status = self._simplified_user_process(user)
+     return status",Refactor process_data for simplified logic,python
+245,"diff --git a/src/api.py b/src/api.py
+index 9399814..1099462 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -11,19 +24,8 @@ def authenticate_user():
+-    status = user.method1()
+    user = process(status)
++    status = self._simplified_user_process(user)
+     return status",Refactor authenticate_user for better maintainability,python
+212,"diff --git a/src/api.py b/src/api.py
+index 4402817..3904381 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -36,11 +25,15 @@ def update_status():
+-    result = response.method1()
+    response = process(result)
++    result = self._simplified_response_process(response)
+     return result",Refactor update_status for reduced complexity,python
+167,"diff --git a/src/api.py b/src/api.py
+index 7954022..3905724 100644
+--- a/src/api.py
++++ b/src/api.py
+@@ -31,10 +21,12 @@ def send_email():
+-    result = response.method1()
+    response = process(result)
++    result = self._simplified_response_process(response)
+     return result",Refactor send_email for better maintainability,python
+83,"diff --git a/src/validators.py b/src/validators.py
+index 8700887..1425021 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -50,15 +40,9 @@ def send_email():
+-    config = data.method1()
+    data = process(config)
++    config = self._simplified_data_process(data)
+     return config",Refactor send_email for simplified logic,python
+251,"diff --git a/src/config.py b/src/config.py
+index 3182412..2448584 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -26,19 +31,15 @@ def parse_config():
+-    data = item.method1()
+    item = process(data)
++    data = self._simplified_item_process(item)
+     return data",Refactor parse_config for better maintainability,python
+35,"diff --git a/src/config.py b/src/config.py
+index 3735962..9580658 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -42,13 +20,13 @@ def process_data():
+-    item = user.method1()
+    user = process(item)
++    item = self._simplified_user_process(user)
+     return item",Refactor process_data for reduced complexity,python
+80,"diff --git a/src/services.py b/src/services.py
+index 9079164..1052312 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -44,17 +41,15 @@ def fetch_results():
+-    response = config.method1()
+    config = process(response)
++    response = self._simplified_config_process(config)
+     return response",Refactor fetch_results for simplified logic,python
+62,"diff --git a/src/services.py b/src/services.py
+index 5583157..4158597 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -38,11 +12,10 @@ def fetch_results():
+-    result = response.method1()
+    response = process(result)
++    result = self._simplified_response_process(response)
+     return result",Refactor fetch_results for better readability,python
+416,"diff --git a/src/validators.py b/src/validators.py
+index 2748855..3161168 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -48,14 +43,14 @@ def validate_input():
+-    response = result.method1()
+    result = process(response)
++    response = self._simplified_result_process(result)
+     return response",Refactor validate_input for better maintainability,python
+71,"diff --git a/src/config.py b/src/config.py
+index 5646652..8481907 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -42,15 +45,14 @@ def validate_input():
+-    status = status.method1()
+    status = process(status)
++    status = self._simplified_status_process(status)
+     return status",Refactor validate_input for improved performance,python
+26,"diff --git a/src/config.py b/src/config.py
+index 7893542..3530359 100644
+--- a/src/config.py
++++ b/src/config.py
+@@ -28,20 +43,15 @@ def calculate_total():
+-    data = result.method1()
+    result = process(data)
++    data = self._simplified_result_process(result)
+     return data",Refactor calculate_total for better readability,python
+230,"diff --git a/src/services.py b/src/services.py
+index 5480631..4088868 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -42,18 +21,8 @@ def send_email():
+-    config = config.method1()
+    config = process(config)
++    config = self._simplified_config_process(config)
+     return config",Refactor send_email for reduced complexity,python
+50,"diff --git a/src/utils.py b/src/utils.py
+index 2946494..1981275 100644
+--- a/src/utils.py
++++ b/src/utils.py
+@@ -47,15 +11,15 @@ def process_data():
+-    item = user.method1()
+    user = process(item)
++    item = self._simplified_user_process(user)
+     return item",Refactor process_data for better readability,python
+110,"diff --git a/src/controllers.py b/src/controllers.py
+index 9522612..9554651 100644
+--- a/src/controllers.py
++++ b/src/controllers.py
+@@ -47,13 +23,15 @@ def authenticate_user():
+-    user = status.method1()
+    status = process(user)
++    user = self._simplified_status_process(status)
+     return user",Refactor authenticate_user for simplified logic,python
+323,"diff --git a/src/validators.py b/src/validators.py
+index 9112185..5004610 100644
+--- a/src/validators.py
++++ b/src/validators.py
+@@ -49,12 +15,11 @@ def save_record():
+-    status = user.method1()
+    user = process(status)
++    status = self._simplified_user_process(user)
+     return status",Refactor save_record for better maintainability,python
+203,"diff --git a/src/services.py b/src/services.py
+index 9005957..7679738 100644
+--- a/src/services.py
++++ b/src/services.py
+@@ -38,13 +16,10 @@ def send_email():
+-    user = status.method1()
+    status = process(user)
++    user = self._simplified_status_process(status)
+     return user",Refactor send_email for improved performance,python
