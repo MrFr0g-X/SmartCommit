@@ -181,6 +181,7 @@ models/
 # ============================================================================
 CONTRIBUTE_*.py
 CONTRIBUTE_*.bat
+commit_as.py
 CONTRIBUTION_SCRIPT_FIX.md
 GITHUB_SETUP_GUIDE.md
 TEAM_CONTRIBUTION_INSTRUCTIONS.md
