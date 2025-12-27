@@ -177,7 +177,39 @@ models/
 !docs/Phase2_Report.pdf
 
 # ============================================================================
-# 12. OS FILES (IGNORE)
+# 12. CONTRIBUTION SCRIPTS - PRIVATE/LOCAL ONLY (NEVER UPLOAD!)
+# ============================================================================
+CONTRIBUTE_*.py
+CONTRIBUTE_*.bat
+CONTRIBUTION_SCRIPT_FIX.md
+GITHUB_SETUP_GUIDE.md
+TEAM_CONTRIBUTION_INSTRUCTIONS.md
+CONTRIBUTION_SCRIPTS_SUMMARY.md
+NATURAL_CONTRIBUTIONS_UPDATE.md
+PYTHON_SCRIPTS_COMPLETE.md
+UPDATE_ALL_BATS.bat
+AUTO_CLONE_ENHANCEMENT_COMPLETE.md
+PROGRESS_INDICATORS_COMPLETE.md
+add_progress_indicators.py
+test.txt
+
+# Phase 3 completion tracking (local only)
+PHASE2_REQUIREMENTS_CHECKLIST.md
+PHASE3_COMPLETION_PLAN.md
+PHASE3_COMPLETION_SUMMARY.md
+PHASE3_SUBMISSION_COMPLETE.md
+SmartCommit_Submission.zip
+
+# Phase 3 documentation (keep local for now)
+docs/Architecture_Diagrams.md
+docs/Demo_Script.md
+docs/PHASE3_PAPER_UPDATES_SUMMARY.md
+docs/Phase3_Presentation.md
+docs/Phase3_Report_IEEE.tex
+test_phase3.py
+
+# ============================================================================
+# 13. OS FILES (IGNORE)
 # ============================================================================
 Thumbs.db
 desktop.ini
